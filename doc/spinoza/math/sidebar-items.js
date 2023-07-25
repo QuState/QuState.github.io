@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"constant":["PI","SQRT_ONE_HALF"],"fn":["modulus","pow2f"],"struct":["Amplitude"],"type":["Float"]};
