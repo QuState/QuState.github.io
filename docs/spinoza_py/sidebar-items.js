@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"fn":["get_samples","run","show_table"],"struct":["PyState","QuantumCircuit","QuantumRegister","QuantumTransformation"]};

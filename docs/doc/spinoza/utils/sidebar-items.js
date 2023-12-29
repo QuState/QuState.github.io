@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"fn":["assert_float_closeness","gen_random_state","mat_mul_2x2","padded_bin","pretty_print_int","swap","to_table"]};

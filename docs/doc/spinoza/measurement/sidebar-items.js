@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"fn":["measure_qubit"]};
