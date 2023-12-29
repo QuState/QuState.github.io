@@ -1,0 +1,3 @@
+(function() {var implementors = {
+"spinoza":[["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Display.html\" title=\"trait core::fmt::Display\">Display</a> for <a class=\"struct\" href=\"spinoza/unitaries/struct.Unitary.html\" title=\"struct spinoza::unitaries::Unitary\">Unitary</a>"],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Display.html\" title=\"trait core::fmt::Display\">Display</a> for <a class=\"struct\" href=\"spinoza/core/struct.State.html\" title=\"struct spinoza::core::State\">State</a>"]]
+};if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()
