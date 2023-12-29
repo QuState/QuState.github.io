@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["iqft","qubit_expectation_value","reservoir_sampling","xyz_expectation_value"],"static":["CONFIG"],"struct":["Reservoir","State"]};
