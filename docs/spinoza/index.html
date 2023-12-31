@@ -1,6 +1,119 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="The rust core of Spinoza"><title>spinoza - Rust</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../static.files/SourceSerif4-Regular-46f98efaafac5295.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../static.files/FiraSans-Regular-018c141bf0843ffd.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../static.files/FiraSans-Medium-8f9a781e4970d388.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../static.files/SourceCodePro-Regular-562dcc5011b6de7d.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../static.files/SourceCodePro-Semibold-d899c5a5c4aeb14a.ttf.woff2"><link rel="stylesheet" href="../static.files/normalize-76eba96aa4d2e634.css"><link rel="stylesheet" href="../static.files/rustdoc-452d19225583af2a.css"><meta name="rustdoc-vars" data-root-path="../" data-static-root-path="../static.files/" data-current-crate="spinoza" data-themes="" data-resource-suffix="" data-rustdoc-version="1.77.0-nightly (fb5ed726f 2023-12-28)" data-channel="nightly" data-search-js="search-c17e98913a53b3b7.js" data-settings-js="settings-4313503d2e1961c2.js" ><script src="../static.files/storage-f2adc0d6ca4d09fb.js"></script><script defer src="../crates.js"></script><script defer src="../static.files/main-6902632119e002ca.js"></script><noscript><link rel="stylesheet" href="../static.files/noscript-feafe1bb7466e4bd.css"></noscript><link rel="alternate icon" type="image/png" href="../static.files/favicon-16x16-8b506e7a72182f1c.png"><link rel="alternate icon" type="image/png" href="../static.files/favicon-32x32-422f7d1d52889060.png"><link rel="icon" type="image/svg+xml" href="../static.files/favicon-2c020d218678b618.svg"></head><body class="rustdoc mod crate"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button></nav><nav class="sidebar"><div class="sidebar-crate"><h2><a href="../spinoza/index.html">spinoza</a><span class="version">0.3.0</span></h2></div><div class="sidebar-elems"><ul class="block">
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="A High Performance Quantum State Simulator"><title>spinoza - Rust</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../static.files/SourceSerif4-Regular-46f98efaafac5295.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../static.files/FiraSans-Regular-018c141bf0843ffd.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../static.files/FiraSans-Medium-8f9a781e4970d388.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../static.files/SourceCodePro-Regular-562dcc5011b6de7d.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../static.files/SourceCodePro-Semibold-d899c5a5c4aeb14a.ttf.woff2"><link rel="stylesheet" href="../static.files/normalize-76eba96aa4d2e634.css"><link rel="stylesheet" href="../static.files/rustdoc-452d19225583af2a.css"><meta name="rustdoc-vars" data-root-path="../" data-static-root-path="../static.files/" data-current-crate="spinoza" data-themes="" data-resource-suffix="" data-rustdoc-version="1.77.0-nightly (fb5ed726f 2023-12-28)" data-channel="nightly" data-search-js="search-c17e98913a53b3b7.js" data-settings-js="settings-4313503d2e1961c2.js" ><script src="../static.files/storage-f2adc0d6ca4d09fb.js"></script><script defer src="../crates.js"></script><script defer src="../static.files/main-6902632119e002ca.js"></script><noscript><link rel="stylesheet" href="../static.files/noscript-feafe1bb7466e4bd.css"></noscript><link rel="alternate icon" type="image/png" href="../static.files/favicon-16x16-8b506e7a72182f1c.png"><link rel="alternate icon" type="image/png" href="../static.files/favicon-32x32-422f7d1d52889060.png"><link rel="icon" type="image/svg+xml" href="../static.files/favicon-2c020d218678b618.svg"></head><body class="rustdoc mod crate"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button></nav><nav class="sidebar"><div class="sidebar-crate"><h2><a href="../spinoza/index.html">spinoza</a><span class="version">0.5.0</span></h2></div><div class="sidebar-elems"><ul class="block">
             <li><a id="all-types" href="all.html">All Items</a></li></ul><section><ul class="block"><li><a href="#modules">Modules</a></li></ul></section></div></nav><div class="sidebar-resizer"></div>
-    <main><div class="width-limiter"><nav class="sub"><form class="search-form"><span></span><div id="sidebar-button" tabindex="-1"><a href="../spinoza/all.html" title="show sidebar"></a></div><input class="search-input" name="search" aria-label="Run search in the documentation" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" tabindex="-1"><a href="../help.html" title="help">?</a></div><div id="settings-menu" tabindex="-1"><a href="../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../static.files/wheel-7b819b6101059cd0.svg"></a></div></form></nav><section id="main-content" class="content"><div class="main-heading"><h1>Crate <a class="mod" href="#">spinoza</a><button id="copy-path" title="Copy item path to clipboard"><img src="../static.files/clipboard-7571035ce49a181d.svg" width="19" height="18" alt="Copy item path"></button></h1><span class="out-of-band"><a class="src" href="../src/spinoza/lib.rs.html#1-19">source</a> · <button id="toggle-all-docs" title="collapse all docs">[<span>&#x2212;</span>]</button></span></div><details class="toggle top-doc" open><summary class="hideme"><span>Expand description</span></summary><div class="docblock"><p>The rust core of Spinoza</p>
-</div></details><h2 id="modules" class="section-header"><a href="#modules">Modules</a></h2><ul class="item-table"><li><div class="item-name"><a class="mod" href="circuit/index.html" title="mod spinoza::circuit">circuit</a></div><div class="desc docblock-short">Abstractions for a quantum circuit</div></li><li><div class="item-name"><a class="mod" href="config/index.html" title="mod spinoza::config">config</a></div><div class="desc docblock-short">Configuration options for running spinoza</div></li><li><div class="item-name"><a class="mod" href="consts/index.html" title="mod spinoza::consts">consts</a></div><div class="desc docblock-short">Consts for Quantum State Simulation, such as the Pauli Gates and the Hadamard gate</div></li><li><div class="item-name"><a class="mod" href="core/index.html" title="mod spinoza::core">core</a></div><div class="desc docblock-short">Abstractions for representing a Quantum State</div></li><li><div class="item-name"><a class="mod" href="gates/index.html" title="mod spinoza::gates">gates</a></div><div class="desc docblock-short">Abstractions for quantum logic gates</div></li><li><div class="item-name"><a class="mod" href="math/index.html" title="mod spinoza::math">math</a></div><div class="desc docblock-short">An assortment of mathematical structures, functions, and constants for quantum state
+    <main><div class="width-limiter"><nav class="sub"><form class="search-form"><span></span><div id="sidebar-button" tabindex="-1"><a href="../spinoza/all.html" title="show sidebar"></a></div><input class="search-input" name="search" aria-label="Run search in the documentation" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" tabindex="-1"><a href="../help.html" title="help">?</a></div><div id="settings-menu" tabindex="-1"><a href="../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../static.files/wheel-7b819b6101059cd0.svg"></a></div></form></nav><section id="main-content" class="content"><div class="main-heading"><h1>Crate <a class="mod" href="#">spinoza</a><button id="copy-path" title="Copy item path to clipboard"><img src="../static.files/clipboard-7571035ce49a181d.svg" width="19" height="18" alt="Copy item path"></button></h1><span class="out-of-band"><a class="src" href="../src/spinoza/lib.rs.html#1-142">source</a> · <button id="toggle-all-docs" title="collapse all docs">[<span>&#x2212;</span>]</button></span></div><details class="toggle top-doc" open><summary class="hideme"><span>Expand description</span></summary><div class="docblock"><p>A High Performance Quantum State Simulator</p>
+<p>Spinoza is a fast and flexible quantum simulator written exclusively in Rust, with bindings available for Python
+users. Spinoza simulates the evolution of a quantum system’s state by applying quantum gates, with the core design
+principle being that a single-qubit gate applied to a target qubit preserves the probability of pairs of amplitudes
+corresponding to measurement outcomes that differ only in the target qubit. Spinoza is intended to enable the
+development of quantum computing solutions by offering researchers and quantum developers a simple, flexible, and
+fast tool for classical simulation.</p>
+<h2 id="how-to-use-spinoza"><a href="#how-to-use-spinoza">How to use Spinoza</a></h2>
+<p>There are three ways to use Spinoza:</p>
+<ul>
+<li><strong>Functional</strong> the simplest way to mutate a quantum state, directly.
+<ul>
+<li><a href="gates/fn.apply.html" title="fn spinoza::gates::apply">apply</a> for quantum transformations that do not need a control (qubit).</li>
+<li><a href="gates/fn.c_apply.html" title="fn spinoza::gates::c_apply">c_apply</a> for quantum transformations that have a single control.</li>
+<li><a href="gates/fn.mc_apply.html" title="fn spinoza::gates::mc_apply">mc_apply</a> for quantum transformation that require multiple controls.</li>
+</ul>
+</li>
+<li><strong>Object Oriented</strong> the <a href="circuit/struct.QuantumCircuit.html" title="struct spinoza::circuit::QuantumCircuit">QuantumCircuit</a> represents a <a href="https://en.wikipedia.org/wiki/Quantum_circuit">quantum circuit</a>.
+Using the <a href="circuit/struct.QuantumCircuit.html" title="struct spinoza::circuit::QuantumCircuit">QuantumCircuit</a> one can create, mutate, and simulate quantum circuits with
+various quantum <a href="gates/enum.Gate.html" title="enum spinoza::gates::Gate">gates</a>, operators, etc.</li>
+<li><strong>Python Bindings</strong> Spinoza has python bindings named <code>Spynoza</code>
+<ul>
+<li>All functionality for <a href="circuit/struct.QuantumCircuit.html" title="struct spinoza::circuit::QuantumCircuit">QuantumCircuit</a> and other functions have corresponding bindings
+created using PyO3.</li>
+</ul>
+</li>
+</ul>
+<h2 id="examples"><a href="#examples">Examples</a></h2>
+<p>Let’s encode the value, 2.4 using the three aforementioned approaches:</p>
+<h4 id="functional"><a href="#functional">Functional</a></h4>
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">use </span>spinoza::{
+    core::{iqft, State},
+    gates::{apply, Gate},
+    math::{pow2f, PI},
+    utils::{to_table},
+};
+
+<span class="kw">pub fn </span>main() {
+    <span class="kw">let </span>n = <span class="number">3</span>;
+    <span class="kw">let </span>v = <span class="number">2.4</span>;
+    <span class="kw">let </span><span class="kw-2">mut </span>state = State::new(n);
+
+    <span class="kw">for </span>i <span class="kw">in </span><span class="number">0</span>..n {
+        apply(Gate::H, <span class="kw-2">&amp;mut </span>state, i);
+    }
+   <span class="kw">for </span>i <span class="kw">in </span><span class="number">0</span>..n {
+        apply(Gate::P(<span class="number">2.0 </span>* PI / (pow2f(i + <span class="number">1</span>)) * v), <span class="kw-2">&amp;mut </span>state, i);
+    }
+    <span class="kw">let </span>targets: Vec&lt;usize&gt; = (<span class="number">0</span>..n).rev().collect();
+
+    iqft(<span class="kw-2">&amp;mut </span>state, <span class="kw-2">&amp;</span>targets);
+    <span class="macro">println!</span>(<span class="string">"{}"</span>, to_table(<span class="kw-2">&amp;</span>state));
+}</code></pre></div>
+<h4 id="object-oriented-oo"><a href="#object-oriented-oo">Object Oriented (OO)</a></h4>
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">use </span>spinoza::{
+    core::{iqft, State},
+    circuit::{QuantumCircuit, QuantumRegister},
+    math::{pow2f, PI},
+    utils::{to_table},
+};
+
+<span class="kw">pub fn </span>main() {
+    <span class="kw">let </span>n = <span class="number">3</span>;
+    <span class="kw">let </span>v = <span class="number">2.4</span>;
+    <span class="kw">let </span>now = std::time::Instant::now();
+    <span class="kw">let </span><span class="kw-2">mut </span>q = QuantumRegister::new(n);
+    <span class="kw">let </span><span class="kw-2">mut </span>qc = QuantumCircuit::new(<span class="kw-2">&amp;mut </span>[<span class="kw-2">&amp;mut </span>q]);
+
+    <span class="kw">for </span>i <span class="kw">in </span><span class="number">0</span>..n {
+        qc.h(i)
+    }
+    <span class="kw">for </span>i <span class="kw">in </span><span class="number">0</span>..n {
+        qc.p(<span class="number">2.0 </span>* PI / pow2f(i + <span class="number">1</span>) * v, i)
+    }
+
+    <span class="kw">let </span>targets: Vec&lt;usize&gt; = (<span class="number">0</span>..n).rev().collect();
+    qc.iqft(<span class="kw-2">&amp;</span>targets);
+    qc.execute();
+    <span class="macro">println!</span>(<span class="string">"{}"</span>, to_table(qc.get_statevector()));
+}</code></pre></div>
+<h4 id="spynoza"><a href="#spynoza">Spynoza</a></h4><div class="example-wrap"><pre class="language-python"><code>from math import pi
+from spynoza import QuantumCircuit, QuantumRegister, show_table
+
+
+def value_encoding(n, v):
+    q = QuantumRegister(n)
+    qc = QuantumCircuit(q)
+
+    for i in range(n):
+        qc.h(i)
+
+    for i in range(n):
+        qc.p(2 * pi / (2 ** (i + 1)) * v, i)
+
+    qc.iqft(range(n)[::-1])
+
+    qc.execute()
+    return qc.get_statevector()
+
+
+if __name__ == &quot;__main__&quot;:
+    state = value_encoding(4, 2.4)
+    print(show_table(state))
+</code></pre></div>
+<p>More complex examples can be found in the <a href="https://github.com/QuState/spinoza/tree/main/spinoza/examples">Spinoza examples</a>
+and the <a href="https://github.com/QuState/spinoza/tree/main/spynoza/examples">Spynoza exmaples</a>.</p>
+<h2 id="references"><a href="#references">References</a></h2><div class="example-wrap"><pre class="language-latex"><code>@misc{yusufov2023designing,
+      title={Designing a Fast and Flexible Quantum State Simulator},
+      author={Saveliy Yusufov and Charlee Stefanski and Constantin Gonciulea},
+      year={2023},
+      eprint={2303.01493},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph}
+}
+</code></pre></div></div></details><h2 id="modules" class="section-header"><a href="#modules">Modules</a></h2><ul class="item-table"><li><div class="item-name"><a class="mod" href="circuit/index.html" title="mod spinoza::circuit">circuit</a></div><div class="desc docblock-short">Abstractions for a quantum circuit</div></li><li><div class="item-name"><a class="mod" href="config/index.html" title="mod spinoza::config">config</a></div><div class="desc docblock-short">Configuration options for running spinoza</div></li><li><div class="item-name"><a class="mod" href="consts/index.html" title="mod spinoza::consts">consts</a></div><div class="desc docblock-short">Consts for Quantum State Simulation, such as the Pauli Gates and the Hadamard gate</div></li><li><div class="item-name"><a class="mod" href="core/index.html" title="mod spinoza::core">core</a></div><div class="desc docblock-short">Abstractions for representing a Quantum State</div></li><li><div class="item-name"><a class="mod" href="gates/index.html" title="mod spinoza::gates">gates</a></div><div class="desc docblock-short">Abstractions for quantum logic gates</div></li><li><div class="item-name"><a class="mod" href="math/index.html" title="mod spinoza::math">math</a></div><div class="desc docblock-short">An assortment of mathematical structures, functions, and constants for quantum state
 simulation.</div></li><li><div class="item-name"><a class="mod" href="measurement/index.html" title="mod spinoza::measurement">measurement</a></div><div class="desc docblock-short">Functionality for measurement</div></li><li><div class="item-name"><a class="mod" href="openqasm/index.html" title="mod spinoza::openqasm">openqasm</a></div><div class="desc docblock-short">Functionality for creating a QuantumCircuit from an OpenQASM 2.0 program</div></li><li><div class="item-name"><a class="mod" href="unitaries/index.html" title="mod spinoza::unitaries">unitaries</a></div><div class="desc docblock-short">Functionality for applying large 2^n * 2^n matrices to the state
 Ideally, this should be a last resort</div></li><li><div class="item-name"><a class="mod" href="utils/index.html" title="mod spinoza::utils">utils</a></div><div class="desc docblock-short">An assortment of utility functions for visualizing, benchmarking, and testing.</div></li></ul></section></div></main></body></html>
